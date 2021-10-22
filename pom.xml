@@ -1,12 +1,15 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>br.com.rest.consumer.cep.correios</groupId>
-  <artifactId>consumer.cep.correios</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <name>consumer.cep.correios</name>
-  <description>tela jframe com retorno de informacoes do cep</description>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>br.com.rest.consumer.cep.correios</groupId>
+	<artifactId>consumer.cep.correios</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+	<name>consumer.cep.correios</name>
+	<description>tela jframe com retorno de informacoes do cep</description>
 
-  	<dependencies>
+	<dependencies>
 
 		<dependency>
 			<groupId>mysql</groupId>
@@ -59,5 +62,60 @@
 		</dependency>
 
 	</dependencies>
+	<build>
+		<sourceDirectory>src/main/java</sourceDirectory>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.5.1</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+					<!-- <archive>
+						<manifest>
+							<mainClass>br.com.consumer.cep.correios.view.TelaConsutaCep</mainClass>
+						</manifest>
+					</archive> -->
+
+				</configuration>
+			</plugin>
+		
+		    
+    
+        <!-- any other plugins -->
+      <plugin>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>single</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <archive>
+            <manifest>
+                <addClasspath>true</addClasspath>
+                <mainClass> br.com.consumer.cep.correios.view.TelaConsultaCep</mainClass>
+            </manifest>
+        </archive>
+          
+          
+          <descriptorRefs>
+            <descriptorRef>jar-with-dependencies</descriptorRef>
+          </descriptorRefs>
+        </configuration>
+      </plugin>
+
+		    
+		
+		
+		
+		
+		
+		</plugins>
+	</build>
+
 
 </project>
