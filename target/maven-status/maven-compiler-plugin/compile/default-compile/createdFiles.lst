@@ -44,6 +44,7 @@ br/com/correios/bsb/sigep/master/bean/cliente/ObjetoSimplificado.class
 br/com/correios/bsb/sigep/master/bean/cliente/ErroMontagemRelatorio.class
 br/com/correios/bsb/sigep/master/bean/cliente/Coleta.class
 br/com/correios/bsb/sigep/master/bean/cliente/EnderecoERP.class
+br/com/consumer/cep/correios/view/TelaConsultaCep$2.class
 br/com/correios/bsb/sigep/master/bean/cliente/ColetaSimultanea.class
 br/com/correios/bsb/sigep/master/bean/cliente/MedidaTO.class
 br/com/correios/bsb/sigep/master/bean/cliente/ObjetoPostalPK.class
