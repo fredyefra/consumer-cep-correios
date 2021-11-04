@@ -34,8 +34,9 @@ public class ConsultaEnderecoWrapper implements Serializable {
 
 		}   
 		catch (SigepClienteException e) {
-			//System.out.println("CEP NAO LOCALIZADO!");
+			endereco = new Endereco();
 			JOptionPane.showMessageDialog(null, "CEP NÃO LOCALIZADO, REFAÇA A BUSCA!");
+			
 			e.printStackTrace();
 		}
 

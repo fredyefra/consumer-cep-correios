@@ -184,12 +184,16 @@ public class TelaConsultaCep extends JFrame {
 		btnCancelar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent eventoCancelar) {
 
-				if (eventoCancelar.getSource() == btnCancelar && txtCep.getText().length() == 8) {
-					ConsultaEnderecoWrapper consultaCorreios = new ConsultaEnderecoWrapper();
-					endereco = consultaCorreios.cepCorreios(txtCep.getText());
-					txtEndereco.setText(endereco.getEndereco());
-					txtComplemento.setText(endereco.getComplemento());
-					txtCidade.setText(endereco.getCidade()); 
+				if (eventoCancelar.getSource() == btnCancelar) {
+					
+					if (txtCep.getText() != null || !txtCep.getText().isEmpty()) {
+						ConsultaEnderecoWrapper consultaCorreios = new ConsultaEnderecoWrapper();
+						endereco = consultaCorreios.cepCorreios(txtCep.getText());
+						txtEndereco.setText(endereco.getEndereco());
+						txtComplemento.setText(endereco.getComplemento());
+						txtCidade.setText(endereco.getCidade()); 
+					}
+					
 				}	
 			}}); 
 	}

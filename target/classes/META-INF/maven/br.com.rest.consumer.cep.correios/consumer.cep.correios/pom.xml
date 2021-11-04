@@ -51,6 +51,15 @@
 			<scope>compile</scope>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/org.apache.axis/axis -->
+		<dependency>
+			<groupId>org.apache.axis</groupId>
+			<artifactId>axis</artifactId>
+			<version>1.4</version>
+		</dependency>
+
+
+
 		<!-- https://mvnrepository.com/artifact/com.liferay/org.apache.axis -->
 		<dependency>
 			<groupId>com.liferay</groupId>
