@@ -9,7 +9,6 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.LayoutStyle.ComponentPlacement;
@@ -23,24 +22,17 @@ public class TelaConsultaCep extends JFrame {
 
 
 	private static final long serialVersionUID = 1L;
+
 	private JFrame frame = new JFrame();
 
-
-	private JTextField txtNome;
-	private JTextField txtDDD;
-	private JTextField txtEmail;
 	private JTextField txtCep;
-	//private JTextField txtEndereco;
-	//private JTextField txtComplemento;
-	//private JTextField txtCidade;
-
-	private JButton btnSalvar = new JButton();
-	private JButton btnCancelar = new JButton("PESQUISAR");
-	private JTextField txtTelefone;
-	private JTextField textField;
 	private JTextField txtEndereco;
 	private JTextField txtComplemento;
 	private JTextField txtCidade;
+
+	private JButton btnPesquisar = new JButton("PESQUISAR");
+
+
 	private Endereco endereco = new Endereco();
 
 	public TelaConsultaCep()  {
@@ -73,8 +65,7 @@ public class TelaConsultaCep extends JFrame {
 						.addContainerGap(170, Short.MAX_VALUE))
 				);
 
-		JLabel lblNewLabel = new JLabel("Consulta Serviço de CEP Correios WSDL");
-		//lblNewLabel.setIcon(new ImageIcon("/opt/eclipse/workspace/consumer.cep.correios/logo2.png"));
+		JLabel lblNewLabel = new JLabel("Consulta Serviço de CEP Correios WSDL.");
 		lblNewLabel.setIcon(new ImageIcon("../consumer.cep.correios/img/logo2.png"));
 		GroupLayout gl_panel = new GroupLayout(panel);
 		gl_panel.setHorizontalGroup(
@@ -115,7 +106,6 @@ public class TelaConsultaCep extends JFrame {
 		txtCidade.setEditable(false);
 		txtCidade.setColumns(10);
 
-		//btnCancelar = new JButton("Pesquisar");
 
 		GroupLayout gl_header = new GroupLayout(body);
 		gl_header.setHorizontalGroup(
@@ -143,7 +133,7 @@ public class TelaConsultaCep extends JFrame {
 						.addContainerGap(68, Short.MAX_VALUE))
 				.addGroup(Alignment.TRAILING, gl_header.createSequentialGroup()
 						.addContainerGap(387, Short.MAX_VALUE)
-						.addComponent(btnCancelar)
+						.addComponent(btnPesquisar)
 						.addGap(383))
 				);
 		gl_header.setVerticalGroup(
@@ -166,7 +156,7 @@ public class TelaConsultaCep extends JFrame {
 										.addGap(34)
 										.addComponent(txtCidade, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)))
 						.addGap(83)
-						.addComponent(btnCancelar)
+						.addComponent(btnPesquisar)
 						.addContainerGap(93, Short.MAX_VALUE))
 				);
 		body.setLayout(gl_header);
@@ -176,16 +166,16 @@ public class TelaConsultaCep extends JFrame {
 		this.frame.setLocationRelativeTo(null);
 		this.frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		consultar();
-		//consultarCep();		
+				
 
 	}
 
 	private void consultar() {
-		btnCancelar.addActionListener(new ActionListener() {
+		btnPesquisar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent eventoCancelar) {
 
-				if (eventoCancelar.getSource() == btnCancelar) {
-					
+				if (eventoCancelar.getSource() == btnPesquisar) {
+
 					if (txtCep.getText() != null || !txtCep.getText().isEmpty()) {
 						ConsultaEnderecoWrapper consultaCorreios = new ConsultaEnderecoWrapper();
 						endereco = consultaCorreios.cepCorreios(txtCep.getText());
@@ -193,37 +183,32 @@ public class TelaConsultaCep extends JFrame {
 						txtComplemento.setText(endereco.getComplemento());
 						txtCidade.setText(endereco.getCidade()); 
 					}
-					
+
 				}	
 			}}); 
 	}
 
 
-
-
 	private void consultarCep() {
 		txtCep.getDocument().addDocumentListener(new DocumentListener() {
 
-			//@Override
+			@Override
 			public void removeUpdate(DocumentEvent arg0) {
-				//warn();
-				if (txtCep.getText().equals(null) || txtCep.getText().length() > 8) {
-					JOptionPane.showMessageDialog(null, "Inesperado");
-				}
-			}
+				warn();
+            }
 
-			//@Override
+			@Override
 			public void insertUpdate(DocumentEvent arg0) {
 				warn();
 			}
 
-			//@Override
+			@Override
 			public void changedUpdate(DocumentEvent arg0) {
 				warn();
 			}
 
 			public void warn() {
-				if (txtCep.getText().length() == 8) {
+				if (txtCep.getText() != null && !txtCep.getText().isEmpty() && txtCep.getText().length() >= 8) {
 					ConsultaEnderecoWrapper consultaCorreios = new ConsultaEnderecoWrapper();
 					endereco = consultaCorreios.cepCorreios(txtCep.getText());
 					txtEndereco.setText(endereco.getEndereco());
