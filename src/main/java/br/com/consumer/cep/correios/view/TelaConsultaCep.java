@@ -75,7 +75,7 @@ public class TelaConsultaCep extends JFrame {
 
 		JLabel lblNewLabel = new JLabel("Consulta Serviço de CEP Correios WSDL");
 		//lblNewLabel.setIcon(new ImageIcon("/opt/eclipse/workspace/consumer.cep.correios/logo2.png"));
-		lblNewLabel.setIcon(new ImageIcon("logo2.png"));
+		lblNewLabel.setIcon(new ImageIcon("../consumer.cep.correios/img/logo2.png"));
 		GroupLayout gl_panel = new GroupLayout(panel);
 		gl_panel.setHorizontalGroup(
 				gl_panel.createParallelGroup(Alignment.LEADING)
