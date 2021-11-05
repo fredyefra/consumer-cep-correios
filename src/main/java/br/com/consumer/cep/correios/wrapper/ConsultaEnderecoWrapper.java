@@ -2,6 +2,7 @@ package br.com.consumer.cep.correios.wrapper;
 
 import java.io.Serializable;
 import java.rmi.RemoteException;
+import java.util.Iterator;
 
 import javax.swing.JOptionPane;
 
@@ -10,11 +11,12 @@ import br.com.correios.bsb.sigep.master.bean.cliente.AtendeClienteProxy;
 import br.com.correios.bsb.sigep.master.bean.cliente.EnderecoERP;
 import br.com.correios.bsb.sigep.master.bean.cliente.SQLException;
 import br.com.correios.bsb.sigep.master.bean.cliente.SigepClienteException;
+import br.com.correios.bsb.sigep.master.bean.cliente.UnidadePostagemERP;
 
-/** @author fredyefra
- * Classe responsavel por receber o endereco via WS dos correios e 
- * tratar para o objeto local Endereco  
- * */
+/**
+ * @author fredyefra Classe responsavel por receber o endereco via WS dos
+ *         correios e tratar para o objeto local Endereco
+ */
 public class ConsultaEnderecoWrapper implements Serializable {
 
 	private static final long serialVersionUID = 1L;
@@ -28,25 +30,24 @@ public class ConsultaEnderecoWrapper implements Serializable {
 
 		try {
 			enderecoERP = new AtendeClienteProxy().consultaCEP(cep);
-            endereco.setCep(enderecoERP.getCep());
+			endereco.setCep(enderecoERP.getCep());
 			endereco.setEndereco(enderecoERP.getEnd());
-			endereco.setCidade(enderecoERP.getBairro() + " - " + enderecoERP.getCidade());	  
+			endereco.setCidade(enderecoERP.getBairro() + " - " + enderecoERP.getCidade());
 
-		}   
+		}
+
 		catch (SigepClienteException e) {
 			endereco = new Endereco();
 			JOptionPane.showMessageDialog(null, "CEP NÃO LOCALIZADO, REFAÇA A BUSCA!");
-			
 			e.printStackTrace();
 		}
 
 		catch (SQLException e) {
-			//System.out.println("Base de Dados Insdiponível, tente mais tarde!");
 			JOptionPane.showMessageDialog(null, "BASE DE DADOS INDISPONÍVEL, TENTE MAIS TARDE!");
-			e.printStackTrace(); }
+			e.printStackTrace();
+		}
 
 		catch (RemoteException e) {
-			//System.out.println("Web Service Insdiponível, tente mais tarde!");
 			JOptionPane.showMessageDialog(null, "WEB SERVICE INDISPONÍVEL, TENTE MAIS TARDE!");
 			e.printStackTrace();
 		}
@@ -55,15 +56,19 @@ public class ConsultaEnderecoWrapper implements Serializable {
 
 	/*
 	 * public static void main(String[] args) throws
+	 * 
 	 * br.com.correios.bsb.sigep.master.bean.cliente.SQLException,
 	 * SigepClienteException, RemoteException {
 	 * 
-	 * System.out.println(new ConsultaEnderecoWrapper().cepCorreios("726003001"));
+	 * System.out.println(new ConsultaEnderecoWrapper().cepCorreios("71720585"));
+	 * 
+	 * 
 	 * 
 	 * System.out.println(endereco.getCep()+ "--" +endereco.getEndereco()+ "--" +
-	 * endereco.getCidade() );
+	 * endereco.getCidade());
 	 * 
 	 * 
 	 * }
 	 */
-}	
+
+}

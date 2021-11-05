@@ -1,5 +1,6 @@
 package br.com.consumer.cep.correios.view;
 
+import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -30,8 +31,11 @@ public class TelaConsultaCep extends JFrame {
 	private JTextField txtComplemento;
 	private JTextField txtCidade;
 
+	
+	private JLabel lblCorreios;
+	
+	
 	private JButton btnPesquisar = new JButton("PESQUISAR");
-
 
 	private Endereco endereco = new Endereco();
 
@@ -65,28 +69,30 @@ public class TelaConsultaCep extends JFrame {
 						.addContainerGap(170, Short.MAX_VALUE))
 				);
 
-		JLabel lblNewLabel = new JLabel("Consulta Serviço de CEP Correios WSDL.");
-		lblNewLabel.setIcon(new ImageIcon("../consumer.cep.correios/img/logo2.png"));
+		
+		lblCorreios = new JLabel("Consulta Serviço de CEP Correios WSDL.", new ImageIcon(TelaConsultaCep.class.getResource("/br/com/consumer/cep/correios/view/logo2.png")), JLabel.LEFT);
+		//lblNewLabel.setIcon(new ImageIcon("../consumer.cep.correios/img/logo2.png"));
 		GroupLayout gl_panel = new GroupLayout(panel);
 		gl_panel.setHorizontalGroup(
 				gl_panel.createParallelGroup(Alignment.LEADING)
 				.addGroup(Alignment.TRAILING, gl_panel.createSequentialGroup()
 						.addContainerGap(211, Short.MAX_VALUE)
-						.addComponent(lblNewLabel, GroupLayout.PREFERRED_SIZE, 607, GroupLayout.PREFERRED_SIZE)
+						.addComponent(lblCorreios, GroupLayout.PREFERRED_SIZE, 607, GroupLayout.PREFERRED_SIZE)
 						.addGap(70))
 				);
 		gl_panel.setVerticalGroup(
 				gl_panel.createParallelGroup(Alignment.LEADING)
 				.addGroup(gl_panel.createSequentialGroup()
 						.addContainerGap()
-						.addComponent(lblNewLabel, GroupLayout.PREFERRED_SIZE, 52, GroupLayout.PREFERRED_SIZE)
+						.addComponent(lblCorreios, GroupLayout.PREFERRED_SIZE, 52, GroupLayout.PREFERRED_SIZE)
 						.addContainerGap(25, Short.MAX_VALUE))
 				);
 		panel.setLayout(gl_panel);
 
 		txtCep = new JTextField();
 		txtCep.setColumns(10);
-
+        
+		
 		JLabel lblCep = new JLabel("CEP:");
 
 		JLabel lblEndereo = new JLabel("ENDEREÇO:");
@@ -164,6 +170,7 @@ public class TelaConsultaCep extends JFrame {
 
 		this.frame.setVisible(true);
 		this.frame.setLocationRelativeTo(null);
+		this.frame.setResizable(false);
 		this.frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		consultar();
 				

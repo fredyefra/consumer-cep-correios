@@ -2,9 +2,9 @@ package br.com.consumer.cep.correios.model;
 
 import java.io.Serializable;
 
-/**@author fredyefra
- * Class representation Endereco from WS EnderecoERP correios  
- * */
+/**
+ * @author fredyefra Class representation Endereco from WS EnderecoERP correios
+ */
 public class Endereco implements Serializable {
 
 	private static final long serialVersionUID = 1L;
