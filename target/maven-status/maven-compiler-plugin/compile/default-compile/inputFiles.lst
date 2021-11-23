@@ -1,59 +1,59 @@
-/opt/eclipse/workspace/consumer.cep.correios/src/main/java/br/com/correios/bsb/sigep/master/bean/cliente/ValePostal.java
-/opt/eclipse/workspace/consumer.cep.correios/src/main/java/br/com/correios/bsb/sigep/master/bean/cliente/Pessoa.java
-/opt/eclipse/workspace/consumer.cep.correios/src/main/java/br/com/correios/bsb/sigep/master/bean/cliente/VigenciaERP.java
-/opt/eclipse/workspace/consumer.cep.correios/src/main/java/br/com/consumer/cep/correios/model/Endereco.java
-/opt/eclipse/workspace/consumer.cep.correios/src/main/java/br/com/correios/bsb/sigep/master/bean/cliente/StatusObjetoPostal.java
-/opt/eclipse/workspace/consumer.cep.correios/src/main/java/br/com/consumer/cep/correios/view/TelaConsultaCep.java
-/opt/eclipse/workspace/consumer.cep.correios/src/main/java/br/com/correios/bsb/sigep/master/bean/cliente/UsuarioInstalacao.java
-/opt/eclipse/workspace/consumer.cep.correios/src/main/java/br/com/correios/bsb/sigep/master/bean/cliente/CartaoPostagemERP.java
-/opt/eclipse/workspace/consumer.cep.correios/src/main/java/br/com/correios/bsb/sigep/master/bean/cliente/Produto.java
-/opt/eclipse/workspace/consumer.cep.correios/src/main/java/br/com/correios/bsb/sigep/master/bean/cliente/ServicoSigep.java
-/opt/eclipse/workspace/consumer.cep.correios/src/main/java/br/com/correios/bsb/sigep/master/bean/cliente/ChancelaMaster.java
-/opt/eclipse/workspace/consumer.cep.correios/src/main/java/br/com/correios/bsb/sigep/master/bean/cliente/UnidadePostagemERP.java
-/opt/eclipse/workspace/consumer.cep.correios/src/main/java/br/com/correios/bsb/sigep/master/bean/cliente/TipoEmbalagem.java
-/opt/eclipse/workspace/consumer.cep.correios/src/main/java/br/com/correios/bsb/sigep/master/bean/cliente/AtendeClienteProxy.java
-/opt/eclipse/workspace/consumer.cep.correios/src/main/java/br/com/correios/bsb/sigep/master/bean/cliente/StatusCartao.java
-/opt/eclipse/workspace/consumer.cep.correios/src/main/java/br/com/correios/bsb/sigep/master/bean/cliente/GerenteConta.java
-/opt/eclipse/workspace/consumer.cep.correios/src/main/java/br/com/correios/bsb/sigep/master/bean/cliente/ContratoERPPK.java
-/opt/eclipse/workspace/consumer.cep.correios/src/main/java/br/com/correios/bsb/sigep/master/bean/cliente/PreListaPostagem.java
-/opt/eclipse/workspace/consumer.cep.correios/src/main/java/br/com/correios/bsb/sigep/master/bean/cliente/MensagemParametrizadaTO.java
-/opt/eclipse/workspace/consumer.cep.correios/src/main/java/br/com/correios/bsb/sigep/master/bean/cliente/ErroMontagemRelatorio.java
-/opt/eclipse/workspace/consumer.cep.correios/src/main/java/br/com/correios/bsb/sigep/master/bean/cliente/ClienteERP.java
-/opt/eclipse/workspace/consumer.cep.correios/src/main/java/br/com/correios/bsb/sigep/master/bean/cliente/AutenticacaoException.java
-/opt/eclipse/workspace/consumer.cep.correios/src/main/java/br/com/correios/bsb/sigep/master/bean/cliente/TipoBloqueio.java
-/opt/eclipse/workspace/consumer.cep.correios/src/main/java/br/com/correios/bsb/sigep/master/bean/cliente/EnderecoERP.java
-/opt/eclipse/workspace/consumer.cep.correios/src/main/java/br/com/correios/bsb/sigep/master/bean/cliente/ObjetoSimplificado.java
-/opt/eclipse/workspace/consumer.cep.correios/src/main/java/br/com/correios/bsb/sigep/master/bean/cliente/Exception.java
-/opt/eclipse/workspace/consumer.cep.correios/src/main/java/br/com/correios/bsb/sigep/master/bean/cliente/ServicoAdicionalXML.java
-/opt/eclipse/workspace/consumer.cep.correios/src/main/java/br/com/correios/bsb/sigep/master/bean/cliente/StatusPlp.java
-/opt/eclipse/workspace/consumer.cep.correios/src/main/java/br/com/correios/bsb/sigep/master/bean/cliente/StatusGerente.java
-/opt/eclipse/workspace/consumer.cep.correios/src/main/java/br/com/correios/bsb/sigep/master/bean/cliente/SQLException.java
-/opt/eclipse/workspace/consumer.cep.correios/src/main/java/br/com/correios/bsb/sigep/master/bean/cliente/SigepClienteException.java
-/opt/eclipse/workspace/consumer.cep.correios/src/main/java/br/com/correios/bsb/sigep/master/bean/cliente/CategoriaServico.java
-/opt/eclipse/workspace/consumer.cep.correios/src/main/java/br/com/correios/bsb/sigep/master/bean/cliente/Acao.java
-/opt/eclipse/workspace/consumer.cep.correios/src/main/java/br/com/correios/bsb/sigep/master/bean/cliente/RetornoCancelamento.java
-/opt/eclipse/workspace/consumer.cep.correios/src/main/java/br/com/correios/bsb/sigep/master/bean/cliente/Remetente.java
-/opt/eclipse/workspace/consumer.cep.correios/src/main/java/br/com/correios/bsb/sigep/master/bean/cliente/ValorDeclarado.java
-/opt/eclipse/workspace/consumer.cep.correios/src/main/java/br/com/correios/bsb/sigep/master/bean/cliente/TipoGerente.java
-/opt/eclipse/workspace/consumer.cep.correios/src/main/java/br/com/correios/bsb/sigep/master/bean/cliente/ServicoAdicionalTO.java
-/opt/eclipse/workspace/consumer.cep.correios/src/main/java/br/com/correios/bsb/sigep/master/bean/cliente/DimensaoTO.java
-/opt/eclipse/workspace/consumer.cep.correios/src/main/java/br/com/correios/bsb/sigep/master/bean/cliente/ColetaSimultanea.java
-/opt/eclipse/workspace/consumer.cep.correios/src/main/java/br/com/correios/bsb/sigep/master/bean/cliente/TipoMensagem.java
-/opt/eclipse/workspace/consumer.cep.correios/src/main/java/br/com/correios/bsb/sigep/master/bean/cliente/ServicoERP.java
-/opt/eclipse/workspace/consumer.cep.correios/src/main/java/br/com/correios/bsb/sigep/master/bean/cliente/ColetaReversa.java
-/opt/eclipse/workspace/consumer.cep.correios/src/main/java/br/com/correios/bsb/sigep/master/bean/cliente/ObjetoPostal.java
-/opt/eclipse/workspace/consumer.cep.correios/src/main/java/br/com/correios/bsb/sigep/master/bean/cliente/Objeto.java
-/opt/eclipse/workspace/consumer.cep.correios/src/main/java/br/com/correios/bsb/sigep/master/bean/cliente/ParametroMaster.java
-/opt/eclipse/workspace/consumer.cep.correios/src/main/java/br/com/correios/bsb/sigep/master/bean/cliente/AtendeClienteServiceSoapBindingStub.java
-/opt/eclipse/workspace/consumer.cep.correios/src/main/java/br/com/consumer/cep/correios/wrapper/ConsultaEnderecoWrapper.java
-/opt/eclipse/workspace/consumer.cep.correios/src/main/java/br/com/correios/bsb/sigep/master/bean/cliente/Coleta.java
-/opt/eclipse/workspace/consumer.cep.correios/src/main/java/br/com/correios/bsb/sigep/master/bean/cliente/StatusUsuario.java
-/opt/eclipse/workspace/consumer.cep.correios/src/main/java/br/com/correios/bsb/sigep/master/bean/cliente/AtendeClienteServiceLocator.java
-/opt/eclipse/workspace/consumer.cep.correios/src/main/java/br/com/correios/bsb/sigep/master/bean/cliente/ServicoAdicionalERP.java
-/opt/eclipse/workspace/consumer.cep.correios/src/main/java/br/com/correios/bsb/sigep/master/bean/cliente/AtendeClienteService.java
-/opt/eclipse/workspace/consumer.cep.correios/src/main/java/br/com/correios/bsb/sigep/master/bean/cliente/ObjetoPostalPK.java
-/opt/eclipse/workspace/consumer.cep.correios/src/main/java/br/com/correios/bsb/sigep/master/bean/cliente/ContratoERP.java
-/opt/eclipse/workspace/consumer.cep.correios/src/main/java/br/com/correios/bsb/sigep/master/bean/cliente/EmbalagemLRSMaster.java
-/opt/eclipse/workspace/consumer.cep.correios/src/main/java/br/com/correios/bsb/sigep/master/bean/cliente/SimNao.java
-/opt/eclipse/workspace/consumer.cep.correios/src/main/java/br/com/correios/bsb/sigep/master/bean/cliente/AtendeCliente.java
-/opt/eclipse/workspace/consumer.cep.correios/src/main/java/br/com/correios/bsb/sigep/master/bean/cliente/MedidaTO.java
+D:\ambiente dev\eclipse\workspace\consumer-cep-correios\src\main\java\br\com\correios\bsb\sigep\master\bean\cliente\AtendeClienteService.java
+D:\ambiente dev\eclipse\workspace\consumer-cep-correios\src\main\java\br\com\correios\bsb\sigep\master\bean\cliente\Coleta.java
+D:\ambiente dev\eclipse\workspace\consumer-cep-correios\src\main\java\br\com\correios\bsb\sigep\master\bean\cliente\SimNao.java
+D:\ambiente dev\eclipse\workspace\consumer-cep-correios\src\main\java\br\com\correios\bsb\sigep\master\bean\cliente\ColetaSimultanea.java
+D:\ambiente dev\eclipse\workspace\consumer-cep-correios\src\main\java\br\com\correios\bsb\sigep\master\bean\cliente\TipoEmbalagem.java
+D:\ambiente dev\eclipse\workspace\consumer-cep-correios\src\main\java\br\com\correios\bsb\sigep\master\bean\cliente\ErroMontagemRelatorio.java
+D:\ambiente dev\eclipse\workspace\consumer-cep-correios\src\main\java\br\com\correios\bsb\sigep\master\bean\cliente\AtendeClienteProxy.java
+D:\ambiente dev\eclipse\workspace\consumer-cep-correios\src\main\java\br\com\consumer\cep\correios\wrapper\ConsultaEnderecoWrapper.java
+D:\ambiente dev\eclipse\workspace\consumer-cep-correios\src\main\java\br\com\correios\bsb\sigep\master\bean\cliente\TipoGerente.java
+D:\ambiente dev\eclipse\workspace\consumer-cep-correios\src\main\java\br\com\correios\bsb\sigep\master\bean\cliente\DimensaoTO.java
+D:\ambiente dev\eclipse\workspace\consumer-cep-correios\src\main\java\br\com\correios\bsb\sigep\master\bean\cliente\UsuarioInstalacao.java
+D:\ambiente dev\eclipse\workspace\consumer-cep-correios\src\main\java\br\com\correios\bsb\sigep\master\bean\cliente\StatusGerente.java
+D:\ambiente dev\eclipse\workspace\consumer-cep-correios\src\main\java\br\com\correios\bsb\sigep\master\bean\cliente\ClienteERP.java
+D:\ambiente dev\eclipse\workspace\consumer-cep-correios\src\main\java\br\com\correios\bsb\sigep\master\bean\cliente\StatusCartao.java
+D:\ambiente dev\eclipse\workspace\consumer-cep-correios\src\main\java\br\com\correios\bsb\sigep\master\bean\cliente\UnidadePostagemERP.java
+D:\ambiente dev\eclipse\workspace\consumer-cep-correios\src\main\java\br\com\correios\bsb\sigep\master\bean\cliente\ServicoAdicionalTO.java
+D:\ambiente dev\eclipse\workspace\consumer-cep-correios\src\main\java\br\com\correios\bsb\sigep\master\bean\cliente\ColetaReversa.java
+D:\ambiente dev\eclipse\workspace\consumer-cep-correios\src\main\java\br\com\correios\bsb\sigep\master\bean\cliente\Exception.java
+D:\ambiente dev\eclipse\workspace\consumer-cep-correios\src\main\java\br\com\correios\bsb\sigep\master\bean\cliente\AtendeCliente.java
+D:\ambiente dev\eclipse\workspace\consumer-cep-correios\src\main\java\br\com\correios\bsb\sigep\master\bean\cliente\ServicoERP.java
+D:\ambiente dev\eclipse\workspace\consumer-cep-correios\src\main\java\br\com\correios\bsb\sigep\master\bean\cliente\AtendeClienteServiceSoapBindingStub.java
+D:\ambiente dev\eclipse\workspace\consumer-cep-correios\src\main\java\br\com\correios\bsb\sigep\master\bean\cliente\StatusPlp.java
+D:\ambiente dev\eclipse\workspace\consumer-cep-correios\src\main\java\br\com\correios\bsb\sigep\master\bean\cliente\EmbalagemLRSMaster.java
+D:\ambiente dev\eclipse\workspace\consumer-cep-correios\src\main\java\br\com\correios\bsb\sigep\master\bean\cliente\TipoMensagem.java
+D:\ambiente dev\eclipse\workspace\consumer-cep-correios\src\main\java\br\com\correios\bsb\sigep\master\bean\cliente\ContratoERP.java
+D:\ambiente dev\eclipse\workspace\consumer-cep-correios\src\main\java\br\com\correios\bsb\sigep\master\bean\cliente\SQLException.java
+D:\ambiente dev\eclipse\workspace\consumer-cep-correios\src\main\java\br\com\correios\bsb\sigep\master\bean\cliente\ServicoAdicionalXML.java
+D:\ambiente dev\eclipse\workspace\consumer-cep-correios\src\main\java\br\com\correios\bsb\sigep\master\bean\cliente\StatusObjetoPostal.java
+D:\ambiente dev\eclipse\workspace\consumer-cep-correios\src\main\java\br\com\correios\bsb\sigep\master\bean\cliente\Produto.java
+D:\ambiente dev\eclipse\workspace\consumer-cep-correios\src\main\java\br\com\correios\bsb\sigep\master\bean\cliente\ServicoSigep.java
+D:\ambiente dev\eclipse\workspace\consumer-cep-correios\src\main\java\br\com\correios\bsb\sigep\master\bean\cliente\ObjetoSimplificado.java
+D:\ambiente dev\eclipse\workspace\consumer-cep-correios\src\main\java\br\com\correios\bsb\sigep\master\bean\cliente\ChancelaMaster.java
+D:\ambiente dev\eclipse\workspace\consumer-cep-correios\src\main\java\br\com\correios\bsb\sigep\master\bean\cliente\CartaoPostagemERP.java
+D:\ambiente dev\eclipse\workspace\consumer-cep-correios\src\main\java\br\com\correios\bsb\sigep\master\bean\cliente\ValorDeclarado.java
+D:\ambiente dev\eclipse\workspace\consumer-cep-correios\src\main\java\br\com\correios\bsb\sigep\master\bean\cliente\Objeto.java
+D:\ambiente dev\eclipse\workspace\consumer-cep-correios\src\main\java\br\com\correios\bsb\sigep\master\bean\cliente\SigepClienteException.java
+D:\ambiente dev\eclipse\workspace\consumer-cep-correios\src\main\java\br\com\correios\bsb\sigep\master\bean\cliente\Acao.java
+D:\ambiente dev\eclipse\workspace\consumer-cep-correios\src\main\java\br\com\correios\bsb\sigep\master\bean\cliente\GerenteConta.java
+D:\ambiente dev\eclipse\workspace\consumer-cep-correios\src\main\java\br\com\correios\bsb\sigep\master\bean\cliente\AutenticacaoException.java
+D:\ambiente dev\eclipse\workspace\consumer-cep-correios\src\main\java\br\com\correios\bsb\sigep\master\bean\cliente\EnderecoERP.java
+D:\ambiente dev\eclipse\workspace\consumer-cep-correios\src\main\java\br\com\correios\bsb\sigep\master\bean\cliente\StatusUsuario.java
+D:\ambiente dev\eclipse\workspace\consumer-cep-correios\src\main\java\br\com\correios\bsb\sigep\master\bean\cliente\ValePostal.java
+D:\ambiente dev\eclipse\workspace\consumer-cep-correios\src\main\java\br\com\correios\bsb\sigep\master\bean\cliente\ObjetoPostal.java
+D:\ambiente dev\eclipse\workspace\consumer-cep-correios\src\main\java\br\com\correios\bsb\sigep\master\bean\cliente\ContratoERPPK.java
+D:\ambiente dev\eclipse\workspace\consumer-cep-correios\src\main\java\br\com\correios\bsb\sigep\master\bean\cliente\MensagemParametrizadaTO.java
+D:\ambiente dev\eclipse\workspace\consumer-cep-correios\src\main\java\br\com\correios\bsb\sigep\master\bean\cliente\PreListaPostagem.java
+D:\ambiente dev\eclipse\workspace\consumer-cep-correios\src\main\java\br\com\correios\bsb\sigep\master\bean\cliente\Pessoa.java
+D:\ambiente dev\eclipse\workspace\consumer-cep-correios\src\main\java\br\com\correios\bsb\sigep\master\bean\cliente\AtendeClienteServiceLocator.java
+D:\ambiente dev\eclipse\workspace\consumer-cep-correios\src\main\java\br\com\correios\bsb\sigep\master\bean\cliente\RetornoCancelamento.java
+D:\ambiente dev\eclipse\workspace\consumer-cep-correios\src\main\java\br\com\correios\bsb\sigep\master\bean\cliente\VigenciaERP.java
+D:\ambiente dev\eclipse\workspace\consumer-cep-correios\src\main\java\br\com\correios\bsb\sigep\master\bean\cliente\Remetente.java
+D:\ambiente dev\eclipse\workspace\consumer-cep-correios\src\main\java\br\com\correios\bsb\sigep\master\bean\cliente\ParametroMaster.java
+D:\ambiente dev\eclipse\workspace\consumer-cep-correios\src\main\java\br\com\correios\bsb\sigep\master\bean\cliente\MedidaTO.java
+D:\ambiente dev\eclipse\workspace\consumer-cep-correios\src\main\java\br\com\correios\bsb\sigep\master\bean\cliente\ServicoAdicionalERP.java
+D:\ambiente dev\eclipse\workspace\consumer-cep-correios\src\main\java\br\com\correios\bsb\sigep\master\bean\cliente\ObjetoPostalPK.java
+D:\ambiente dev\eclipse\workspace\consumer-cep-correios\src\main\java\br\com\correios\bsb\sigep\master\bean\cliente\TipoBloqueio.java
+D:\ambiente dev\eclipse\workspace\consumer-cep-correios\src\main\java\br\com\correios\bsb\sigep\master\bean\cliente\CategoriaServico.java
+D:\ambiente dev\eclipse\workspace\consumer-cep-correios\src\main\java\br\com\consumer\cep\correios\model\Endereco.java
+D:\ambiente dev\eclipse\workspace\consumer-cep-correios\src\main\java\br\com\consumer\cep\correios\view\TelaConsultaCep.java
