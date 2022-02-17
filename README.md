@@ -1,7 +1,7 @@
 # consumer-cep-correios
 -------------------
 
-Consumer WDSL zip code from post office brazil in standalone application Java.
+Simple project using JFrame layout to consumer WDSL zip code from post office Brazil.
 
 
 <img src="/img/captura-consumer-cep.png" alt="My cool logo"/>
