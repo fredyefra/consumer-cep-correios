@@ -1,6 +1,5 @@
 package br.com.consumer.cep.correios.view;
 
-import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -89,7 +88,7 @@ public class TelaConsultaCep extends JFrame {
 				);
 		panel.setLayout(gl_panel);
 
-		txtCep = new JTextField();
+		txtCep = new JTextField(8);
 		txtCep.setColumns(10);
         
 		

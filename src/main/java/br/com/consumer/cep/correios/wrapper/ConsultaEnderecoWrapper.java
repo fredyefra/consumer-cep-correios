@@ -54,6 +54,7 @@ public class ConsultaEnderecoWrapper implements Serializable {
 		return endereco;
 	}
 
+	
 	/*
 	 * public static void main(String[] args) throws
 	 * 
@@ -70,5 +71,6 @@ public class ConsultaEnderecoWrapper implements Serializable {
 	 * 
 	 * }
 	 */
+	 
 
 }
